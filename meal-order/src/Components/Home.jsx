@@ -8,7 +8,7 @@ const HomePage = () => {
       style={{ backgroundImage: `url(${FoodPage})` }}
     >
       {/* Overlay for opacity */}
-      <div className="absolute inset-0 bg-black opacity-60"></div>
+      <div className="absolute inset-0 bg-black opacity-70"></div>
       
       {/* Content */}
       <div className="relative z-10 w-full max-w-4xl p-4 text-center">

@@ -2,7 +2,7 @@ import React from 'react';
 
 const MenuItem = ({ meal, selectedDrinks, handleSelectDrink, handleSelectMeal }) => {
   return (
-    <div className="py-4 flex flex-col md:flex-row duration-300 px-4 border-b border-gray-300 bg-white shadow-sm rounded-lg hover:shadow-lg transition-shadow">
+    <div className="py-4 flex flex-col md:flex-row duration-300 px-4 border-b border-yellow-300 bg-white shadow-sm rounded-lg hover:shadow-lg transition-shadow">
       <div className="flex flex-col md:flex-row w-full md:justify-between">
         <img
           className="w-full md:w-52 lg:w-60 h-36 rounded-lg object-cover mb-4 md:mb-0"

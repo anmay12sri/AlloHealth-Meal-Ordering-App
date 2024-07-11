@@ -143,6 +143,16 @@ const MenuCard = ({ selectedLabel, mealList }) => {
     return grandTotal;
   };
 
+  const handleOrderNow = () => {
+    alert('Ordered Successfully');
+    setSelectedMeals({});
+    setSelectedDrinks({});
+    setPassenger(null);
+    setActiveButton(null);
+    setCurrentPage(0);
+    localStorage.clear();
+  };
+
   return (
     <div className="flex flex-col lg:flex-row space-y-4 md:gap-8 md:space-x-4 md:justify-center">
       {/* Menu items */}
@@ -204,6 +214,12 @@ const MenuCard = ({ selectedLabel, mealList }) => {
               }).format(calculateGrandTotal())}
             </p>
           </div>
+          <button
+            onClick={handleOrderNow}
+            className="mt-4 px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none"
+          >
+            Order Now
+          </button>
         </div>
       </div>
     </div>

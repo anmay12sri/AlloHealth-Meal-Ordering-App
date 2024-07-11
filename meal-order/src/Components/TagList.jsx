@@ -18,7 +18,7 @@ const TagList = ({ onLabelSelect }) => {
         <div
           key={label.id}
           className={`text-md font-semibold border rounded-xl border-black px-3 py-1 cursor-pointer text-center ${
-            selectedLabel === label.id ? 'bg-indigo-400 text-white' : ''
+            selectedLabel === label.id ? 'bg-blue-400 text-white' : ''
           }`}
           onClick={() => handleLabelClick(label.id)}
         >
