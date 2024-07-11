@@ -13,24 +13,27 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex md:justify-between w-auto px-20 full z-20 top-0 left-0 self-baseline sticky backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-blue-200 bg-lightblue-100">
+    <div className="flex md:justify-between w-auto px-20 full  bg-blue-300 z-20 top-0 left-0 self-baseline sticky backdrop-filter backdrop-blur-lg bg-opacity-30 border-b border-blue-200 bg-lightblue-100">
       {/* LOGO */}
-      <div>
-        <Link to="/">
-          <img src={logo} alt="logo" className="hidden sm:block md:w-20 md:h-20 mt-4 sm:mt-2 sm:pb-2" />
-        </Link>
+      <div className="flex items-center">
+      <Link to="/">
+    <img src={logo} alt="logo" className="hidden sm:block md:w-35 md:h-20 mt-4 sm:mt-2 sm:pb-2" />
+  </Link>
+  <Link to="/" className="hidden sm:block ml-2">
+    <p className="text-xl font-serif font-extrabold">HighFlyDining</p>
+  </Link>
         <Link to="/">
           <p className="sm:hidden mt-8 -ml-16 text-xl font-serif font-extrabold">HighFlyDining</p>
         </Link>
       </div>
       {/* PAGES */}
-      <div>
-        <ul className="flex gap-10 md:mt-10 mt-8 ml-2 sm:ml-0">
+      <div className="mr-7 mb-1 ">
+        <ul className="flex gap-10 md:mt-10 mt-9 ml-2 mr-8 sm:ml-0">
           <Link to="/">
-            <li className="hidden sm:block font-semibold text-lg hover:text-amber-800"> Home </li>
+            <li className="hidden sm:block font-bold text-lg hover:text-blue-800"> Home </li>
           </Link>
           <Link to="/meals">
-            <li className="font-semibold text-lg hover:text-amber-800"> Meals </li>
+            <li className="font-bold text-lg hover:text-blue-800"> Meals </li>
           </Link>
         </ul>
       </div>

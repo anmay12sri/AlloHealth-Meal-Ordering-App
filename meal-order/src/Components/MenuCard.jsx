@@ -159,7 +159,7 @@ const MenuCard = ({ selectedLabel, mealList }) => {
       <div
         className="md:w-3/4 lg:w-2/3 xl:w-1/2 rounded-lg shadow-lg mt-8 md:mx-auto lg:mx-0"
         style={{
-          background: 'linear-gradient(to right top, #8abdf3, #8abdf3, #aac6f2, #c3d0f1, #d8dcef)'
+          background: 'linear-gradient(to right top, #fbd38d, #fbd38d, #f0c09e, #e5b4b1, #d8aad7)'
         }}
       >
         {mealsToShow.map((meal) => (
@@ -184,7 +184,7 @@ const MenuCard = ({ selectedLabel, mealList }) => {
             breakLabel={'...'}
             onPageChange={handlePageClick}
             containerClassName={'pagination'}
-            activeClassName={'bg-blue-500 text-white px-4 py-2 rounded-lg'}
+            activeClassName={'bg-yellow-500 text-white px-4 py-2 rounded-lg'}
           />
         </div>
       </div>
